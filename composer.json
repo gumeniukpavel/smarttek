@@ -1,0 +1,20 @@
+{
+    "name": "smarttek/test",
+    "description": "SmartTek sets",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "require": {
+        "symfony/routing": "^4.4",
+        "symfony/http-foundation": "^4.4",
+        "ext-mysqli": "*",
+        "illuminate/database": "8.x-dev",
+        "symfony/var-dumper": "5.4.x-dev",
+        "jenssegers/blade": "dev-master",
+        "ext-curl": "*",
+        "ext-json": "*"
+    },
+    "minimum-stability": "dev"
+}
