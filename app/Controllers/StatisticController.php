@@ -17,7 +17,7 @@ class StatisticController
         try {
             $uploadedFile = $request->files->get('csv');
             if ($uploadedFile) {
-                $response = StatisticModule::prerapeStats($uploadedFile);
+                $response = StatisticModule::prepareStats($uploadedFile);
                 return BladeModule::render('stats', ['response' => $response]);
             } else {
                 return BladeModule::render('stats', ['error' => 'Select file!']);

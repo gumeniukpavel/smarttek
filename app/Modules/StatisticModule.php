@@ -9,7 +9,7 @@ class StatisticModule
     /**
      * @throws \Exception
      */
-    public static function prerapeStats(UploadedFile $uploadedFile)
+    public static function prepareStats(UploadedFile $uploadedFile): array
     {
         $response = [];
         $filepath = FileModule::saveFile($uploadedFile);

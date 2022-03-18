@@ -84,7 +84,7 @@ class Database
         }
     }
 
-    public function getAppliedMigrations()
+    public function getAppliedMigrations(): array
     {
         return Capsule::table('migrations')->get()->pluck('migration')->toArray();
     }
