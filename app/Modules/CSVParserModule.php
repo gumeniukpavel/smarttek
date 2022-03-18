@@ -2,7 +2,7 @@
 
 namespace App\Modules;
 
-class CSVParser
+class CSVParserModule
 {
     public static function getLinesGenerator($file, $folder): \Generator
     {

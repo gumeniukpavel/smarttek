@@ -4,7 +4,7 @@ namespace App\Modules;
 
 use Symfony\Component\HttpFoundation\File\UploadedFile;
 
-class File
+class FileModule
 {
     public static function saveFile(UploadedFile $file)
     {

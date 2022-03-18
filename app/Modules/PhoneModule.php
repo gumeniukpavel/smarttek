@@ -2,9 +2,9 @@
 
 namespace App\Modules;
 
-class Phone
+class PhoneModule
 {
-    public function getCountriesInfoGenerator()
+    public function getCountriesInfo(): array
     {
         $txtFile = file_get_contents('http://download.geonames.org/export/dump/countryInfo.txt');
         $rows = explode("\n", $txtFile);
@@ -47,6 +47,6 @@ class Phone
                 return $info['continent'];
             }
         }
-        throw new \Exception("Not found phone code");
+        return 'NAN';
     }
 }

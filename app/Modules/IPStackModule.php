@@ -2,11 +2,14 @@
 
 namespace App\Modules;
 
-class IPStack
+class IPStackModule
 {
+    /**
+     * @throws \Exception
+     */
     public static function checkIP(string $ip)
     {
-        $access_key = 'API_KEY';
+        $access_key = IPSTACK_KEY;
 
         $ch = curl_init('http://api.ipstack.com/' . $ip . '?access_key=' . $access_key);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);

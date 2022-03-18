@@ -4,7 +4,7 @@ namespace App\Modules;
 
 use Jenssegers\Blade\Blade as SystemBlade;
 
-class Blade
+class BladeModule
 {
     public static function render(string $view, array $params = []): string
     {

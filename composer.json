@@ -14,7 +14,8 @@
         "symfony/var-dumper": "5.4.x-dev",
         "jenssegers/blade": "dev-master",
         "ext-curl": "*",
-        "ext-json": "*"
+        "ext-json": "*",
+        "symfony/dotenv": "5.4.x-dev"
     },
     "minimum-stability": "dev"
 }

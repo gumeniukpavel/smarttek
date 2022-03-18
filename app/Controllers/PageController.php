@@ -2,13 +2,12 @@
 
 namespace App\Controllers;
 
-use App\Modules\Blade;
-use Symfony\Component\Routing\RouteCollection;
+use App\Modules\BladeModule;
 
 class PageController
 {
     public function indexAction($request): string
     {
-        return Blade::render('index');
+        return BladeModule::render('index');
     }
 }
